@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name product:</b>
+  <%= @product.name_product %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @product.category_id %>
+</p>
+
+<p>
+  <b>Ingredients:</b>
+  <%= @product.ingredients %>
+</p>
+
+<p>
+  <b>Expration:</b>
+  <%= @product.expration %>
+</p>
+
+<p>
+  <b>Conservation:</b>
+  <%= @product.conservation %>
+</p>
+
+<p>
+  <b>Format:</b>
+  <%= @product.format %>
+</p>
+
+<p>
+  <b>Specialformat:</b>
+  <%= @product.specialformat %>
+</p>
+
+<p>
+  <b>Preparation:</b>
+  <%= @product.preparation %>
+</p>
+
+<p>
+  <b>Moreinfo:</b>
+  <%= @product.moreinfo %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

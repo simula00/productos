@@ -1,0 +1,40 @@
+<h1>Listing images</h1>
+
+<table>
+  <tr>
+    <th>Product</th>
+    <th>Image file name</th>
+    <th>Image content type</th>
+    <th>Image file size</th>
+    <th>Image upadte at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @images.each do |image| %>
+  <tr>
+    <td><%= image.product_id %></td>
+    <td><%= image.image_file_name %></td>
+    <td><%= image.image_content_type %></td>
+    <td><%= image.image_file_size %></td>
+    <td><%= image.image_upadte_at %></td>
+    <td><%= link_to 'Show', image %></td>
+    <td><%= link_to 'Edit', edit_image_path(image) %></td>
+    <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></td>
+
+	<td>	<% if image.image? %>
+		 <%= image_tag image.image.url(:medium) %>
+		<br />
+		 <%= link_to image.image.url, image.image.url %>
+		<% end %> </td>
+		
+  </tr>
+
+
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Image', new_image_path %>

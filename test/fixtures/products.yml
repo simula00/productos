@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_product: MyString
+  category_id: 1
+  ingredients: MyText
+  expration: MyText
+  conservation: MyText
+  format: MyText
+  specialformat: MyText
+  preparation: MyText
+  moreinfo: MyText
+
+two:
+  name_product: MyString
+  category_id: 1
+  ingredients: MyText
+  expration: MyText
+  conservation: MyText
+  format: MyText
+  specialformat: MyText
+  preparation: MyText
+  moreinfo: MyText
